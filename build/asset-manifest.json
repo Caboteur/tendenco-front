@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.200461a0.chunk.css",
+    "main.js": "/static/js/main.60a83c9b.chunk.js",
+    "main.js.map": "/static/js/main.60a83c9b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f1a3eaab.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f1a3eaab.js.map",
+    "static/js/2.89e4d7b1.chunk.js": "/static/js/2.89e4d7b1.chunk.js",
+    "static/js/2.89e4d7b1.chunk.js.map": "/static/js/2.89e4d7b1.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.bbd9891c61de039987ac317ba3449e5c.js": "/precache-manifest.bbd9891c61de039987ac317ba3449e5c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.200461a0.chunk.css.map": "/static/css/main.200461a0.chunk.css.map",
+    "static/js/2.89e4d7b1.chunk.js.LICENSE.txt": "/static/js/2.89e4d7b1.chunk.js.LICENSE.txt",
+    "static/media/acaslonpro-regular.otf": "/static/media/acaslonpro-regular.07c51e08.otf",
+    "static/media/exit.svg": "/static/media/exit.486104b5.svg",
+    "static/media/google.svg": "/static/media/google.a2cfb3a7.svg",
+    "static/media/logo.svg": "/static/media/logo.9922e888.svg",
+    "static/media/news.svg": "/static/media/news.40803abb.svg",
+    "static/media/twitter.svg": "/static/media/twitter.e7c36e58.svg",
+    "static/media/wikipedia.svg": "/static/media/wikipedia.bd7a7a15.svg",
+    "static/media/youtube.svg": "/static/media/youtube.728e38d9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f1a3eaab.js",
+    "static/js/2.89e4d7b1.chunk.js",
+    "static/css/main.200461a0.chunk.css",
+    "static/js/main.60a83c9b.chunk.js"
+  ]
+}
