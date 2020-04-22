@@ -6,6 +6,7 @@ import wiki from 'wikijs'
 import countries from './Api/countries.js'
 import Preloader from './Preloader.js'
 
+
 class Container extends Component {
   constructor(props) {
     super(props);
@@ -180,7 +181,7 @@ class Container extends Component {
             this.state.reponse.map((trend, index) =>
 
             <div id={"container" + index} className={styles.articleContainer}>
-
+              {console.log(trend.topic.articles)}
               <ButtonTrend id={index} display={this.state.displayButton} trad={this.state.trad} value={trend.topic.title.query} click={this.handleClick.bind(this)} key={index} title={trend.topic.title.query}/>
 
               <Viewer

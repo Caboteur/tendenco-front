@@ -36,14 +36,14 @@ class Viewer extends Component {
      </div>
      <div><a href={this.props.youtubeSearch}>
        <img alt="youtube" className={styles.icon} src={youtube} />
-    >
+
        </a>
      </div>
      <div>
        <a href={this.props.url}>
        <img alt="news" className={styles.icon} src={news} />
-       {this.props.url?   <div><h2 className={styles.article}> {this.props.title}</h2>
-     <p>{this.props.url.source} </p> </div> : <h2></h2> }
+       {this.props.url?   <div><h2 className={styles.article}> {this.props.source}</h2>
+     <p>{this.props.source} </p> </div> : <h2></h2> }
        </a>
      </div>
 

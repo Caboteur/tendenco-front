@@ -36,12 +36,11 @@
   background: #EBECF0;
 font-family: 'Montserrat Alternates', sans-serif;
 color:#518bfe;
-font-size: 20px;
+font-size: 15px;
 text-align: center;
 margin: auto;
 display: block;
 max-width: 511px;
-/* border-radius: 50% !important; */
 overflow: hidden;
 margin: 0 auto;
 border: none;
@@ -61,5 +60,12 @@ margin-top: 40px;
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (max-width: 740px) {
+  .title {
+    max-width:250px;
   }
 }
