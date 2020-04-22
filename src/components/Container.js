@@ -40,7 +40,7 @@ class Container extends Component {
    body.map((tab)=>{
 
       if (tab.country  === this.state.value){
-        this.setState({ loading:"none" }, console.log(this.state.loading))
+        this.setState({ loading:"none" })
         this.setState({ reponse: [...this.state.reponse, tab] })
       }
     })
@@ -179,7 +179,7 @@ class Container extends Component {
           {
             this.state.reponse.map((trend, index) =>
 
-            <div id={index} className={styles.articleContainer}>
+            <div id={"container" + index} className={styles.articleContainer}>
 
               <ButtonTrend id={index} display={this.state.displayButton} trad={this.state.trad} value={trend.topic.title.query} click={this.handleClick.bind(this)} key={index} title={trend.topic.title.query}/>
 
