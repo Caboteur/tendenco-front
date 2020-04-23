@@ -27,19 +27,25 @@ class Container extends Component {
   }
 
   componentDidMount(){
+    this.fastResponse();
     this.Server();
-
+}
+ async fastResponse(){
+    const response= await fetch('https://tedenco-topics.herokuapp.com/first-trend');
+    const body = await response.json();
+      this.setState({ data: body})
+      this.News();
   }
   async Server(){
-    const response= await fetch('https://tedenco-topics.herokuapp.com/news-trend-'+this.state.value);
+    const response= await fetch('http://localhost:3001/news-trend');
     const body = await response.json();
-    const tate = body;
+
     this.setState({ data: body })
-    this.News();
   }
   async News(){
-   await  this.setState({ loading:"inherit" })
-    await this.setState({ reponse: [] })
+     console.log(this.state.data)
+await  this.setState({ loading:"inherit" })
+await this.setState({ reponse: [] })
 
    await this.state.data.map((tab)=>{
 
@@ -48,8 +54,6 @@ class Container extends Component {
         this.setState({ reponse: [...this.state.reponse, tab] })
       }
     })
-
-
   }
 
 
