@@ -37,7 +37,7 @@ class Container extends Component {
       this.News();
   }
   async Server(){
-    const response= await fetch('https://tedenco-topics.herokuapp.com/newst-trend');
+    const response= await fetch('https://tedenco-topics.herokuapp.com/news-trend');
     const body = await response.json();
 
     this.setState({ data: body })
