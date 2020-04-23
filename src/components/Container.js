@@ -27,24 +27,32 @@ class Container extends Component {
   }
 
   componentDidMount(){
-    console.log(countries())
-    this.News();
+    this.Server();
+
   }
-
-
-  async News(){
-    this.setState({ reponse: [] })
+  async Server(){
     const response= await fetch('https://tedenco-topics.herokuapp.com/news-trend-'+this.state.value);
     const body = await response.json();
+    const tate = body;
+    this.setState({ data: body })
+    this.News();
+  }
+  async News(){
+   await  this.setState({ loading:"inherit" })
+    await this.setState({ reponse: [] })
 
-   body.map((tab)=>{
+   await this.state.data.map((tab)=>{
 
       if (tab.country  === this.state.value){
         this.setState({ loading:"none" }, console.log(this.state.loading))
         this.setState({ reponse: [...this.state.reponse, tab] })
       }
     })
+
+
   }
+
+
 
   handleChange (event){
     this.setState({value: event.target.value}, ()=>{
@@ -204,12 +212,13 @@ class Container extends Component {
 
           )}
 
+          <Preloader display={this.state.loading} />
 
           <button className={styles.selector} style={{display:this.state.displaytrad}} onClick={this.translate.bind(this)}>Traduire</button>
 
         </div>
 
-          <Preloader display={this.state.loading} />
+
 
       </div>
     );

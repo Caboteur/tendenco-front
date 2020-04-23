@@ -20,6 +20,6 @@
   ],
   "start_url": "/",
   "display": "fullscreen",
-  "theme_color": "red",
-  "background_color": "red"
+  "theme_color": "#EBECF0",
+  "background_color": "#EBECF0"
 }
