@@ -6,7 +6,6 @@ import wiki from 'wikijs'
 import countries from './Api/countries.js'
 import Preloader from './Preloader.js'
 
-
 class Container extends Component {
   constructor(props) {
     super(props);
@@ -41,7 +40,7 @@ class Container extends Component {
    body.map((tab)=>{
 
       if (tab.country  === this.state.value){
-        this.setState({ loading:"none" })
+        this.setState({ loading:"none" }, console.log(this.state.loading))
         this.setState({ reponse: [...this.state.reponse, tab] })
       }
     })
@@ -78,6 +77,7 @@ class Container extends Component {
     this.youtubeSearch(elem);
     const element = document.getElementById("button" + id)
     element.className=styles.articleContainerFull
+    console.log(document.getElementsByTagName("body").style)
   }
 
   handleClickoff(e){
@@ -181,7 +181,7 @@ class Container extends Component {
             this.state.reponse.map((trend, index) =>
 
             <div id={"container" + index} className={styles.articleContainer}>
-              {console.log(trend.topic.articles)}
+
               <ButtonTrend id={index} display={this.state.displayButton} trad={this.state.trad} value={trend.topic.title.query} click={this.handleClick.bind(this)} key={index} title={trend.topic.title.query}/>
 
               <Viewer

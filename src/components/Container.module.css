@@ -33,6 +33,7 @@ background:red;
 }
 .articleContainerFullOff{
 display: none;
+overflow: hidden;
 }
 
 .options{

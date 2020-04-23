@@ -13,3 +13,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #EBECF0;
 }
+
+html{
+  overflow:inherit;
+}
