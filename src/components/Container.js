@@ -74,14 +74,12 @@ await this.setState({ reponse: [] })
   }
 
   handleClick(e){
-    if (this.state.display==="none"){
-      this.setState({display:"inherit"});
-    }else{
-      this.setState({display:"none"});
-    }
+     const targt = "button" + e.target.id;
+     console.log(targt);
+    document.getElementById(targt).style.display="inherit";
+    this.setState({displayButton:"none"})
     const elem = e.target.getAttribute('name')
     const id = e.target.id;
-
     this.setState({id:id});
     this.wiki(elem)
     this.googleSearch(elem);
@@ -93,6 +91,7 @@ await this.setState({ reponse: [] })
   }
 
   handleClickoff(e){
+    this.setState({displayButton:"inherit"})
   const element = document.getElementById("button" + this.state.id)
   this.setState({display:"none"});
   element.style.display="none";

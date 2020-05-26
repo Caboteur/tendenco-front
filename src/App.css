@@ -64,8 +64,12 @@ margin-top: 40px;
 }
 
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 940px) {
   .title {
     max-width:250px;
+  }
+
+  .App-logo{
+    height: 20vmin;
   }
 }

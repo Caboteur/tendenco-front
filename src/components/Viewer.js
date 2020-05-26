@@ -17,49 +17,56 @@ class Viewer extends Component {
       <h1 className={styles.title}>{this.props.topics}</h1>
       </div>
    <div>
-     <a href={this.props.wikiurl}>
+     <div className={styles.text}>
        Une page associée sur wikipédia
+       </div>
+      <a href={this.props.wikiurl}>
      <img alt="wikipedia" className={styles.icon} src={wikipedia} />
 
      </a>
    </div>
    <div>
-     <a href={this.props.googleSearch}>
+      <div className={styles.text}>
         Recherchez ce therme sur google
+        </div>
+        <a href={this.props.googleSearch}>
      <img alt="google" className={styles.icon} src={google} />
 
      </a>
    </div>
    <div>
-     <a href={this.props.twitterSearch}>
+       <div className={styles.text}>
          Recherchez ce therme sur twitter
+         </div>
+          <a href={this.props.twitterSearch}>
      <img alt="twitter" className={styles.icon} src={twitter} />
 
      </a>
    </div>
-   <div><a href={this.props.youtubeSearch}>
+   <div>
+     <div className={styles.text}>
       Recherchez ce therme sur youtube
+      </div>
+      <a href={this.props.youtubeSearch}>
      <img alt="youtube" className={styles.icon} src={youtube} />
-  >
+
      </a>
    </div>
    <div>
-     <a href={this.props.url}>
+      <div className={styles.text}>
        Un article associé
+     </div>
+       <a href={this.props.url}>
      <img alt="news" className={styles.icon} src={news} />
-     {this.props.url?   <div><h2 className={styles.article}> {this.props.title}</h2>
+     {/*{this.props.url?   <div><h2 className={styles.article}> {this.props.title}</h2>
    <p>{this.props.url.source} </p> </div> : <h2></h2> }
-     </a>
+     */}
+      </a>
    </div>
 
-
-
-
-
-
-
-    //  {this.props.url1?   <div><h1><a href={this.props.url1}> {this.props.title1}</a></h1>
-      //<p>{this.props.url.source1} </p> </div> : <h1></h1> }
+    {/* {this.props.url1?   <div><h1><a href={this.props.url1}> {this.props.title1}</a></h1>
+      <p>{this.props.url.source1} </p> </div> : <h1></h1> }
+      */}
 
       </div>
 

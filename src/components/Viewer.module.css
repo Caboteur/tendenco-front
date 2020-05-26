@@ -8,7 +8,8 @@ font-family: 'Montserrat Alternates', sans-serif;
 
 
 .icon{
-  width: 5%;
+  cursor: pointer;
+  width: 2.7rem;
   margin-left: 20px;
   height: 10vmin;
   font-size: 20px;
@@ -26,7 +27,7 @@ font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .exitButton{
-  width: 4%;
+  width: 2rem;
 float: left;
 display: inline-block;
 }
@@ -39,4 +40,24 @@ display: inline-block;
 
 .headerContainer{
   margin: 25px;
+}
+
+.text{
+  padding: 10px;
+}
+
+
+@media screen and (max-width: 950px) {
+  .icon {
+    width: 2rem;
+        height: 10vmin;
+        font-size: 20px;
+        border: none;
+        padding: 16px 28px;
+        border-radius: 9px;
+        color: #6D7587;
+        box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgba(255, 255, 255, 0) !important;
+        transition: box-shadow .25s ease !important;
+    }
+
 }
