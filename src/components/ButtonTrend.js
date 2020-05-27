@@ -26,11 +26,11 @@ class ButtonTrend extends Component {
   render() {
     return (
 
-
+      <>
       <div id={this.props.id} style={{display:this.props.display}} name={this.props.value} onClick={this.props.click} className={styles.Button}>
         {this.props.trad === true? this.state.title : this.props.value}
       </div>
-
+      </>
     );
   }
 }
