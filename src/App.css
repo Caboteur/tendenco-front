@@ -6,7 +6,7 @@
 }
 
 .App-logo {
-  height: 10vmin;
+  height: 4rem;
   margin-top: 33px;
   font-size: 20px;
     border: none;
@@ -70,6 +70,6 @@ margin-top: 40px;
   }
 
   .App-logo{
-    height: 20vmin;
+    height: 4rem;
   }
 }
