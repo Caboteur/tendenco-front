@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "https://www.lerelayeur.fr/",
   "display": "fullscreen",
   "theme_color": "#EBECF0",
   "background_color": "#EBECF0"
