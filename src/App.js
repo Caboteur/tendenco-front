@@ -10,9 +10,9 @@ class App extends Component {
     return (
       <div className="App">
          <img src={logo} className="App-logo" alt="logo" />
+         <div className="signature">Design par <a href="http://adrienblanchot.fr/">Adrien Blanchot</a></div>
         <h1 className="title">Découvrez l'actualité en France et dans le monde par les principales recherches google de la journée.</h1>
         <Container />
-        <div className="signature">Design par <a href="http://adrienblanchot.fr/">Adrien Blanchot</a></div>
       </div>
     );
   }
