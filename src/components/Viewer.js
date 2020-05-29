@@ -43,7 +43,7 @@ class Viewer extends Component {
 
    <div>
       <div className={styles.text}>
-        Recherchez ce therme sur google
+        Recherchez ce terme sur google
         </div>
         <a href={this.props.googleSearch}>
      <img alt="google" className={styles.icon} src={google} />
@@ -52,7 +52,7 @@ class Viewer extends Component {
    </div>
    <div>
        <div className={styles.text}>
-         Recherchez ce therme sur twitter
+         Recherchez ce terme sur twitter
          </div>
           <a href={this.props.twitterSearch}>
      <img alt="twitter" className={styles.icon} src={twitter} />
@@ -61,7 +61,7 @@ class Viewer extends Component {
    </div>
    <div>
      <div className={styles.text}>
-      Recherchez ce therme sur youtube
+      Recherchez ce terme sur youtube
       </div>
       <a href={this.props.youtubeSearch}>
      <img alt="youtube" className={styles.icon} src={youtube} />
