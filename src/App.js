@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
          <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="title">le monde par les principales recherches google de la journée.</h1>
+        <h1 className="title">Découvrez l'actualité en France et dans le monde par les principales recherches google de la journée.</h1>
         <Container />
       </div>
     );
