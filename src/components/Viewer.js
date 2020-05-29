@@ -27,6 +27,22 @@ class Viewer extends Component {
    </div>
    <div>
       <div className={styles.text}>
+       Un article associé
+     </div>
+       <a href={this.props.url}>
+     <img alt="news" className={styles.icon} src={news} />
+     {/*{this.props.url?   <div><h2 className={styles.article}> {this.props.title}</h2>
+   <p>{this.props.url.source} </p> </div> : <h2></h2> }
+     */}
+      </a>
+   </div>
+
+    {/* {this.props.url1?   <div><h1><a href={this.props.url1}> {this.props.title1}</a></h1>
+      <p>{this.props.url.source1} </p> </div> : <h1></h1> }
+      */}
+
+   <div>
+      <div className={styles.text}>
         Recherchez ce therme sur google
         </div>
         <a href={this.props.googleSearch}>
@@ -52,21 +68,6 @@ class Viewer extends Component {
 
      </a>
    </div>
-   <div>
-      <div className={styles.text}>
-       Un article associé
-     </div>
-       <a href={this.props.url}>
-     <img alt="news" className={styles.icon} src={news} />
-     {/*{this.props.url?   <div><h2 className={styles.article}> {this.props.title}</h2>
-   <p>{this.props.url.source} </p> </div> : <h2></h2> }
-     */}
-      </a>
-   </div>
-
-    {/* {this.props.url1?   <div><h1><a href={this.props.url1}> {this.props.title1}</a></h1>
-      <p>{this.props.url.source1} </p> </div> : <h1></h1> }
-      */}
 
       </div>
 

@@ -43,14 +43,14 @@ class Container extends Component {
     this.setState({ data: body })
   }
   async News(){
-     console.log(this.state.data)
+
 await  this.setState({ loading:"inherit" })
 await this.setState({ reponse: [] })
 
    await this.state.data.map((tab)=>{
 
       if (tab.country  === this.state.value){
-        this.setState({ loading:"none" }, console.log(this.state.loading))
+        this.setState({ loading:"none" })
         this.setState({ reponse: [...this.state.reponse, tab] })
       }
     })
@@ -63,10 +63,10 @@ await this.setState({ reponse: [] })
       this.News();
       if(this.state.value === "FR"){
           this.setState({displaytrad: "none"})
-          console.log("trad")
+
       }else{
         this.setState({displaytrad: "inherit"})
-        console.log("pas trad")
+
       }
     })
 
@@ -75,7 +75,7 @@ await this.setState({ reponse: [] })
 
   handleClick(e){
      const targt = "button" + e.target.id;
-     console.log(targt);
+
     document.getElementById(targt).style.display="inherit";
     this.setState({displayButton:"none"})
     const elem = e.target.getAttribute('name')
@@ -87,7 +87,6 @@ await this.setState({ reponse: [] })
     this.youtubeSearch(elem);
     const element = document.getElementById("button" + id)
     element.className=styles.articleContainerFull
-    console.log(document.getElementsByTagName("body").style)
   }
 
   handleClickoff(e){
@@ -142,7 +141,7 @@ await this.setState({ reponse: [] })
                     .find(title)
                       .then(page => this.setState({wikiurl:page.raw.fullurl}), ()=>console.log(this.state.wikiurl))
                }else {
-                 console.log("nop")
+                 console.log("nowiki")
                }
              }
            )
