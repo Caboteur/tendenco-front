@@ -21,6 +21,12 @@
     transition: box-shadow .25s ease !important;
 }
 
+@-moz-document url-prefix() {
+    .Button{
+        font-weight: 100;
+    }
+}
+
 .Button:hover{
   box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
 }

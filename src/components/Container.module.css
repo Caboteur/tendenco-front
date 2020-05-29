@@ -12,7 +12,7 @@ background:red;
 
 .articleLink{
   color:#4E4D8C;
-  font-family: 'Alegreya', serif;  font-size: 20px;
+  font-family: 'Karla', sans-serif;
   line-height: 23px;
 }
 
@@ -43,7 +43,7 @@ overflow: hidden;
 }
 
 .selector{
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Karla', sans-serif;
   background: none;
   border: none;
   text-align-last: center;
@@ -61,6 +61,7 @@ overflow: hidden;
     margin-bottom: 30px;
     background: #1b0d4e;
     width: 230px;
+    -webkit-appearance: none;
 }
 
 .selector:focus {

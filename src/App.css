@@ -54,6 +54,13 @@ border: none;
 margin-top: 40px;
 }
 
+@-moz-document url-prefix() {
+    .title{
+        font-weight: 200;
+    }
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
